@@ -21,19 +21,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCs-6a-Eex">
-                                <rect key="frame" x="156" y="130" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCs-6a-Eex">
+                                <rect key="frame" x="142" y="70" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96w-t0-csA">
+                                <rect key="frame" x="154" y="100" width="67" height="30"/>
+                                <state key="normal" title="PUSH ME"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPu-ph-aqJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBU-pI-Dcd">
+                                <rect key="frame" x="148" y="230" width="79" height="30"/>
+                                <state key="normal" title="PUSH ME 2"/>
+                                <connections>
+                                    <action selector="Buttonsarecool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XgD-86-W0A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KBU-pI-Dcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DXq-61-Gyr"/>
+                            <constraint firstItem="KBU-pI-Dcd" firstAttribute="top" secondItem="96w-t0-csA" secondAttribute="bottom" constant="100" id="LZ3-LB-jvl"/>
+                            <constraint firstItem="96w-t0-csA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Our-Q3-VtZ"/>
+                            <constraint firstItem="KBU-pI-Dcd" firstAttribute="top" secondItem="96w-t0-csA" secondAttribute="bottom" constant="100" id="P6L-tB-XRu"/>
+                            <constraint firstItem="DCs-6a-Eex" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Vxw-5r-myl"/>
+                            <constraint firstItem="96w-t0-csA" firstAttribute="top" secondItem="DCs-6a-Eex" secondAttribute="bottom" constant="9" id="fYI-tG-7Dv"/>
+                            <constraint firstItem="DCs-6a-Eex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yKG-80-JQF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theLabel" destination="DCs-6a-Eex" id="IuF-fe-aax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>
